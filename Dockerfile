@@ -5,4 +5,4 @@ RUN mkdir -p /data
 
 VOLUME ["/data"]
 
-ENTRYPOINT ["/usr/bin/tail", "-f", "/dev/null"]
+ENTRYPOINT ["/bin/true"]
