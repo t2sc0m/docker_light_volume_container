@@ -1,6 +1,9 @@
 FROM scratch
 MAINTAINER tescom <tescom@atdt01410.com>
 
-VOLUME /data
+RUN mkdir -p /data
+RUN chmod 777 /data
+
+VOLUME ["/data"]
 
 ENTRYPOINT ["/usr/bin/tail -f /dev/null"]
