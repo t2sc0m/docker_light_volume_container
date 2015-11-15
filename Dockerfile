@@ -1,7 +1,7 @@
 FROM scratch
 MAINTAINER tescom <tescom@atdt01410.com>
 
-ADD ["/data"]
+RUN mkdir /data
 
 VOLUME ["/data"]
 
