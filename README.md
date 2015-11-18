@@ -14,7 +14,7 @@ busybox:latest
 ## USAGE
 ### Start Volume Container
 ```shell
-$ sudo docker run --rm -d --name=av adite/light_volume_container \
+$ sudo docker run -d --name=av adite/light_volume_container \
                   -v ${local_share_directory}:/data
 ```
 ---
