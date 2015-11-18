@@ -2,8 +2,8 @@ FROM busybox:latest
 MAINTAINER tescom <tescom@atdt01410.com>
 
 RUN mkdir -p /data
-RUN chmod 777 /data
 
 VOLUME ["/data"]
 
-ENTRYPOINT ["/bin/true"]
+#ENTRYPOINT ["/bin/true"]
+ENTRYPOINT ["/usr/bin/tail", "-f", "/dev/null"]
